@@ -1,6 +1,18 @@
 #!/bin/bash
 
-# Usage: ./convert_for_web.sh path/to/source.mp4
+# Video Optimization Script for Cloud Brush Media
+# Converts source video files to web-optimized formats
+#
+# Usage: ./convert-for-web.sh path/to/source.mp4
+#
+# Requirements:
+#   - HandBrakeCLI (https://handbrake.fr/)
+#   - FFmpeg (https://ffmpeg.org/)
+#
+# This script creates:
+#   - Mobile MP4 (720p, ~2Mbps) for mobile devices
+#   - Desktop MP4 (1080p, ~5Mbps) for desktop viewing
+#   - WebM (VP9, ~2-3Mbps) for modern browsers
 
 SOURCE="$1"
 BASENAME=$(basename "$SOURCE" .mp4)
