@@ -1,0 +1,45 @@
+{
+  "name": "cloud-brush-media",
+  "version": "1.0.0",
+  "description": "Professional photography and filmmaking portfolio website for Paul King",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "python -m http.server 8000 --directory public",
+    "serve": "npx serve public",
+    "dev": "npx serve public --listen 3000",
+    "lint": "npx htmlhint public/*.html && npx markdownlint *.md",
+    "validate": "npx html-validate public/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/progroup/cbm.git"
+  },
+  "keywords": [
+    "photography",
+    "filmmaking",
+    "cinematography",
+    "portfolio",
+    "video-background",
+    "responsive-design",
+    "tailwindcss"
+  ],
+  "author": {
+    "name": "Paul King",
+    "url": "https://cloudbrush.media"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/progroup/cbm/issues"
+  },
+  "homepage": "https://github.com/progroup/cbm#readme",
+  "devDependencies": {
+    "htmlhint": "^1.1.4",
+    "html-validate": "^8.7.3",
+    "markdownlint-cli": "^0.37.0",
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
